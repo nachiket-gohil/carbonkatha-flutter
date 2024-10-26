@@ -1,0 +1,40 @@
+name: carbo2
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  dio: ^5.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/image/
+    - assets/svg/
+
+  fonts:
+    - family: ReadexPro
+      fonts:
+        - asset: fonts/ReadexPro-Bold.ttf
+        - asset: fonts/ReadexPro-SemiBold.ttf
+        - asset: fonts/ReadexPro-Medium.ttf
+        - asset: fonts/ReadexPro-Light.ttf
+    - family: NotoSans
+      fonts:
+        - asset: fonts/NotoSans-Bold.ttf
+        - asset: fonts/NotoSans-SemiBold.ttf
+        - asset: fonts/NotoSans-Medium.ttf
+        - asset: fonts/NotoSans-Light.ttf
