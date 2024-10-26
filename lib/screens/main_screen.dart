@@ -33,22 +33,22 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       body: widgetOptions.elementAt(selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
+        items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: '',
+            icon: Image.asset("assets/image/home.png"),
+            label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.add_outlined),
-            label: '',
+            icon: Image.asset("assets/image/transaction.png"),
+            label: 'Transaction',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.notifications),
-            label: '',
+            icon: Image.asset("assets/image/offset.png"),
+            label: 'Contribute',
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            label: '',
+            label: 'Profile',
           ),
         ],
         selectedItemColor: const Color.fromARGB(255, 0, 0, 0),

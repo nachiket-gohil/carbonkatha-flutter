@@ -1,4 +1,4 @@
-import 'package:carbo2/config/routes.dart';
+import 'package:carbo2/core/routes.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -39,7 +39,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             ),
             const SizedBox(height: 30),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed(OneRoute.quesions);
+              },
               child: const Text("Login"),
             ),
             const SizedBox(height: 30),

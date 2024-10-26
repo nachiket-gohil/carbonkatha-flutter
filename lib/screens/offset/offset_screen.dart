@@ -1,4 +1,4 @@
-import 'package:carbo2/config/routes.dart';
+import 'package:carbo2/core/routes.dart';
 import 'package:flutter/material.dart';
 
 class OffsetScreen extends StatefulWidget {

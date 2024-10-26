@@ -1,4 +1,4 @@
-import 'package:carbo2/config/routes.dart';
+import 'package:carbo2/core/routes.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -96,7 +96,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 "assets/image/laptop.png",
                 "Tech",
                 () {
-                  Navigator.of(context).pushNamed(OneRoute.tech_category);
+                  // Navigator.of(context).pushNamed(OneRoute.tech_category);
+                  // canURL();
                 },
               ),
             ],
@@ -106,6 +107,15 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+//
+// Future<void> canURL() async {
+//   if (await canLaunchUrl(Uri.parse(techUrl))) {
+//     print("true");
+//     await launchUrl(Uri.parse(techUrl));
+//   } else {
+//     throw Exception('Could not launch ');
+//   }
+// }
 
 Widget myCardRow(
   BuildContext context,

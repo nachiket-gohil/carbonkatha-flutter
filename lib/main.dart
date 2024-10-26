@@ -1,7 +1,7 @@
 import 'package:carbo2/screens/onboarding/onboard_screen.dart';
 import 'package:flutter/material.dart';
 
-import 'config/routes.dart';
+import 'core/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Carbi',
+      title: 'CarbonKatha',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
